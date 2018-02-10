@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
+    flavorDimensions "minSdkVersion"
     defaultConfig {
         applicationId "com.me.travelapp"
         minSdkVersion 19
@@ -16,6 +17,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        // Build variant with minSdk 16 to include Facebook and FirebaseUI libraries.
+        minSdkJellybean {
+            dimension "minSdkVersion"
+            minSdkVersion 19
+        }
+        // Build variant with minSdk 14, excludes Facebook and FirebaseUI libraries.
+        minSdkIcs {
+            dimension "minSdkVersion"
+            minSdkVersion 14
+        }
+    }
+
 }
 
 dependencies {
@@ -25,4 +40,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    implementation 'com.google.firebase:firebase-auth:11.8.0'
 }
+
+
+apply plugin: 'com.google.gms.google-services'

@@ -16,6 +16,7 @@ package com.me.travelapp.javafiles;
         import android.view.animation.AnimationUtils;
 
 
+        import com.me.travelapp.LoginActivity.LoginActivity;
         import com.me.travelapp.MainActivity;
         import com.me.travelapp.R;
         import com.me.travelapp.javafiles.KenBurnsView;
@@ -23,7 +24,7 @@ package com.me.travelapp.javafiles;
 public class SplashActivity extends Activity {
 
     // Splash screen timer
-    private static int SPLASH_TIME_OUT = 20000;
+    private static int SPLASH_TIME_OUT = 5000;
     private KenBurnsView mKenBurns;
 
     @Override
@@ -41,9 +42,8 @@ public class SplashActivity extends Activity {
 
             @Override
             public void run() {
-                Intent i = new Intent(SplashActivity.this, MainActivity.class);
+                Intent i = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(i);
-
                 finish();
             }
         }, SPLASH_TIME_OUT);

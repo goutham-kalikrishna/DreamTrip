@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "676454430694",
+    "firebase_url": "https://travelapp-70fa5.firebaseio.com",
+    "project_id": "travelapp-70fa5",
+    "storage_bucket": "travelapp-70fa5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676454430694:android:88184866bf851ce8",
+        "android_client_info": {
+          "package_name": "com.me.travelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676454430694-1qpf7oogovt8vu7jhl991s52qs5jutec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.travelapp",
+            "certificate_hash": "4abccf00b4a00e293cec02852a156af0309a0300"
+          }
+        },
+        {
+          "client_id": "676454430694-r620i9acrjkirt26bvlj3clkv785fr85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-Lnow27glO4ODvQJXzZFhB1ccEHJOd5U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "676454430694-r620i9acrjkirt26bvlj3clkv785fr85.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
