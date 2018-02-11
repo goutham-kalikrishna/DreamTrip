@@ -3,12 +3,14 @@ package com.me.travelapp.Fragments;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,6 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.me.travelapp.Adapters.BlogAdapter;
 import com.me.travelapp.Adapters.BlogListAdapter;
 import com.me.travelapp.BlogWriterActivity;
+import com.me.travelapp.FullBlogAdapter;
 import com.me.travelapp.POJO.Post;
 import com.me.travelapp.R;
 import com.me.travelapp.Utils.VerticalViewPager;
@@ -107,6 +110,15 @@ public class BlogFragment extends Fragment {
 //            viewPager.setAdapter(new BlogAdapter(getContext(),postArrayList));
             listView.setAdapter(new BlogListAdapter(getContext(),postArrayList));
         }
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(getActivity().getApplication(), FullBlogAdapter.class);
+                intent.putExtra("data", postArrayList.get(i));
+//                startActivity(intent);
+            }
+        });
     }
 
 }

@@ -44,6 +44,7 @@ public class BlogWriterActivity extends AppCompatActivity {
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef;
 
+    static String data="";
     Post post;
     EditText text;
     ImageView imageView;
@@ -62,8 +63,8 @@ public class BlogWriterActivity extends AppCompatActivity {
         text=findViewById(R.id.blogEditView);
         imageView=findViewById(R.id.blogImageView);
 //        imageView.setImageResource(R.drawable.google_logo);
-        readFromFile();
-
+//        readFromFile();
+        text.setText(data);
 
         post=new Post();
 
@@ -103,11 +104,11 @@ public class BlogWriterActivity extends AppCompatActivity {
     }
 
     private void writeToFile() {
-        String data = text.getText().toString();
+        data = text.getText().toString();
         String[] result = data.split("\n", 2);
         String name="travel.txt";
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(this.openFileOutput("config.txt", Context.MODE_PRIVATE));
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(this.openFileOutput(name, Context.MODE_PRIVATE));
             outputStreamWriter.write(data);
             outputStreamWriter.close();
         }

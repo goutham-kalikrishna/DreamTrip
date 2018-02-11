@@ -10,12 +10,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.me.travelapp.R;
 
 import java.io.ByteArrayOutputStream;
+import java.io.Serializable;
 
 /**
  * Created by Half_BlooD PrincE on 2/11/2018.
  */
 
-public class Post {
+public class Post implements Serializable {
 
     String myUserId;
     String photo;
@@ -47,6 +48,17 @@ public class Post {
         return temp;
     }
 
+    public Bitmap StringToBitMap(String encodedString){
+        try {
+            byte [] encodeByte= Base64.decode(encodedString,Base64.DEFAULT);
+            Bitmap bitmap= BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);
+            return bitmap;
+        } catch(Exception e) {
+            e.getMessage();
+            return null;
+        }
+    }
+
     public String getBlog() {
         return blog;
     }
@@ -67,6 +79,12 @@ public class Post {
     {
         photo = BitMapToString(bitmap);
     }
+
+    public Bitmap retrivePhoto() {
+
+        return StringToBitMap(photo);
+    }
+
 
     public String getMyUserId() {
         return myUserId;
