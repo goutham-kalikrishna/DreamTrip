@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.me.travelapp.HotelSelection">
+
+    <ListView
+        android:id="@+id/HotelList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/hotelbill"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_alignParentBottom="true"
+        android:background="#a9d2a9"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taj Banjara"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/fprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Cost : 10000 INR"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_below="@+id/fname"
+            />
+
+        <Button
+            android:id="@+id/Hproceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed "
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>
