@@ -38,6 +38,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.me.travelapp.MainActivity;
 import com.me.travelapp.R;
 import com.me.travelapp.javafiles.SplashActivity;
 
@@ -153,7 +154,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (user != null) {
             mStatusTextView.setText(user.getDisplayName());
             mDetailTextView.setText(user.getPhotoUrl().toString());
-            Intent i = new Intent(LoginActivity.this, LoginActivity.class);
+            Intent i = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(i);
             finish();
             findViewById(R.id.forgot_btn).setVisibility(View.GONE);
