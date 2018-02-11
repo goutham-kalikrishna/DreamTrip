@@ -1,5 +1,7 @@
 package com.me.travelapp;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -9,6 +11,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.Window;
 
 import com.me.travelapp.Fragments.BlogFragment;
 import com.me.travelapp.Fragments.HomeFragment;
@@ -26,13 +29,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar = getSupportActionBar();
+       // toolbar = getSupportActionBar();
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        toolbar.setTitle("Home");
+        //toolbar.setTitle("Home");
         loadFragment(new HomeFragment());
+        navigation.setItemBackgroundResource(R.color.global_color_green_primary);
 
     }
 
@@ -46,31 +50,31 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    toolbar.setTitle("Home");
+          //          toolbar.setTitle("Home");
                     fragment=new HomeFragment();
-                    loadFragment(fragment);
-                    navigation.setItemBackgroundResource(R.color.bgBottomNavigation);
-                    return true;
-                case R.id.navigation_trips:
-                    toolbar.setTitle("My Trips");
-                    fragment=new TripsFragment();
                     loadFragment(fragment);
                     navigation.setItemBackgroundResource(R.color.global_color_green_primary);
                     return true;
+                case R.id.navigation_trips:
+            //        toolbar.setTitle("My Trips");
+                    fragment=new TripsFragment();
+                    loadFragment(fragment);
+                    navigation.setItemBackgroundResource(R.color.bgBottomNavigation);
+                    return true;
                 case R.id.navigation_blog:
-                    toolbar.setTitle("Blog");
+              //      toolbar.setTitle("Blog");
                     fragment=new BlogFragment();
                     loadFragment(fragment);
                     navigation.setItemBackgroundResource(R.color.global_color_green_accent);
                     return true;
                 case R.id.navigation_profile:
-                    toolbar.setTitle("Profile");
+                //    toolbar.setTitle("Profile");
                     fragment=new ProfileFragment();
                     loadFragment(fragment);
                     navigation.setItemBackgroundResource(R.color.colorPrimary);
                     return true;
                 case R.id.navigation_support:
-                    toolbar.setTitle("Support");
+                 //   toolbar.setTitle("Support");
                     fragment=new SupportFragment();
                     loadFragment(fragment);
                     navigation.setItemBackgroundResource(R.color.global_color_green_primary_dark);
