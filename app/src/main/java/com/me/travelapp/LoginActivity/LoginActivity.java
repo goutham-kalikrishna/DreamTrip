@@ -153,7 +153,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void updateUI(@Nullable FirebaseUser user) {
         if (user != null) {
             mStatusTextView.setText(user.getDisplayName());
-            mDetailTextView.setText(user.getPhotoUrl().toString());
+//            mDetailTextView.setText(user.getPhotoUrl().toString());
             Intent i = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(i);
             finish();
@@ -277,7 +277,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             signIN.setBackgroundResource(R.drawable.login_button_bg);
             signIN.setAlpha(0.7f);
             progressBar.setVisibility(View.VISIBLE);
-            mAuth.signInWithEmailAndPassword(username.getText().toString().trim(), password.getText().toString())
+            mAuth.createUserWithEmailAndPassword(username.getText().toString().trim(), password.getText().toString())
                     .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
