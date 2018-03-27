@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    tools:context="com.me.travelapp.FullBlogAdapter">
+
+
+    <ImageView
+        android:layout_marginVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blogImage1"
+        />
+
+    <TextView
+        android:layout_below="@+id/blogImage1"
+        android:layout_width="match_parent"
+        android:layout_marginVertical="15dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/blogText1"
+        />
+
+</RelativeLayout>

@@ -1,13 +1,41 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.me.travelapp.Fragments.BlogFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <com.me.travelapp.Utils.VerticalViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Blog Fragment" />
+        android:visibility="gone"
+        android:id="@+id/mVerticalViewPager">
 
-</FrameLayout>
+    </com.me.travelapp.Utils.VerticalViewPager>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="4dp"
+        android:id="@+id/listBlog"></ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab"
+            android:background="@color/global_color_green_accent"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

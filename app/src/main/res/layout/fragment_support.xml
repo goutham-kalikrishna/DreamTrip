@@ -5,9 +5,181 @@
     tools:context="com.me.travelapp.Fragments.SupportFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Support Fragment" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@drawable/button"
+            android:orientation="vertical"
+            android:paddingLeft="7dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/hilbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:text="Hi "
+                    android:textColor="#FFFFF0"
+                    android:textSize="35dp"/>
+
+                <TextView
+                    android:id="@+id/uname_help"
+                    android:textColor="#FFFFFF"
+                    android:text="Pranay"
+                    android:textSize="35dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="How Can We Help? "
+
+                android:textSize="25dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="4.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="8"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/Refund"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Refund Policy"
+                android:textSize="20dp"
+                android:elevation="2dp"
+                android:background="@drawable/myrect"
+                android:paddingLeft="8dp"
+                />
+
+
+
+            <android.support.v4.widget.Space
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+            <TextView
+                android:id="@+id/Wallet"
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Wallet"
+                android:textSize="20dp"
+                android:elevation="2dp"
+                android:background="@drawable/myrect"
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:paddingLeft="8dp"
+                android:id="@+id/Payment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Payment"
+                android:textSize="20dp"
+                android:elevation="2dp"
+                android:background="@drawable/myrect"/>
+
+            <android.support.v4.widget.Space
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/Cancelling"
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Modifying/Cancelling"
+                android:textSize="20dp"
+                android:elevation="2dp"
+                android:background="@drawable/myrect"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/Eticket"
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Eticket"
+                android:textSize="20dp"
+                android:elevation="2dp"
+                android:background="@drawable/myrect"/>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:id="@+id/contact_info"
+                android:paddingLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:text="For Further Details Contact:"
+                android:textSize="20dp"
+
+                android:background="@drawable/myrect"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="8dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Goutham : 8130971237\nPranay : 9494243450\nGirish : 8130827751"
+                android:textSize="15sp"
+
+                android:background="@drawable/myrect"/>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.me.travelapp.BlogWriterActivity"
+    android:background="@android:color/white"
+    tools:showIn="@layout/activity_blog_writer">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/blogImageView"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blogImageView"
+        android:background="@android:color/transparent"
+        android:id="@+id/blogEditView"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:layout_marginTop="20dp"
+        android:gravity="top|left"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="14dp"
+        android:minLines="4"
+        android:maxLines="2000"
+        android:maxLength="2000"
+        android:inputType="textMultiLine|textCapSentences"
+        />
+
+    <Button
+        android:id="@+id/addImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
