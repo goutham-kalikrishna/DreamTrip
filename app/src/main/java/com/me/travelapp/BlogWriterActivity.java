@@ -240,7 +240,7 @@ public class BlogWriterActivity extends AppCompatActivity {
 
         myRef = database.getReference("Blog").child("count");
         myRef.setValue(value);
-
+        finish();;
     }
 
 

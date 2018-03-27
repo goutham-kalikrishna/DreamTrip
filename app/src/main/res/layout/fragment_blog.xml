@@ -17,7 +17,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:dividerHeight="@dimen/appbar_padding_top"
+        android:dividerHeight="4dp"
         android:id="@+id/listBlog"></ListView>
 
     <RelativeLayout

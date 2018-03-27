@@ -51,13 +51,13 @@ public class HotelSelection extends AppCompatActivity {
        select.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-             //  Intent intent=new Intent(this,);
-//               Bundle bundle = new Bundle();
-//
-//               bundle.putString("Hotel name",fname.getText().toString());
-//               bundle.putDouble("Hotel price",Double.valueOf(fprice.getText().toString()));
-//               intent.putExtras(bundle);
-//               startActivity(intent);
+               Intent intent=new Intent(HotelSelection.this,ListViewDraggingAnimation.class);
+               Bundle bundle = new Bundle();
+
+               bundle.putString("Hotel name",fname.getText().toString());
+               bundle.putString("Hotel price",fprice.getText().toString());
+               intent.putExtras(bundle);
+               startActivity(intent);
            }
        });
         queue = Volley.newRequestQueue(getApplicationContext());

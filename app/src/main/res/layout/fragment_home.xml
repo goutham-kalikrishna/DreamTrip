@@ -116,7 +116,7 @@
                         android:layout_height="wrap_content"
                         android:minEms="5"
                         android:textColor="#AA000000"
-                        android:editable="false"
+                        android:hint="YYYYMMDD"
                         android:layout_marginTop="10dp"
                         android:layout_below="@id/depDate_lbl"/>
 
@@ -144,8 +144,8 @@
                         android:layout_height="wrap_content"
                         android:minEms="5"
                         android:layout_marginTop="10dp"
-
-                        android:editable="false"/>
+                        android:hint="YYYYMMDD"
+                        />
                 </RelativeLayout>
                 <TextView
                     android:textSize="20sp"

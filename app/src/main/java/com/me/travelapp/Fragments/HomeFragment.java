@@ -23,6 +23,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.me.travelapp.HotelSelection;
+import com.me.travelapp.ListItem;
 import com.me.travelapp.POJO.Hotel;
 import com.me.travelapp.R;
 
@@ -43,6 +44,7 @@ public class HomeFragment extends Fragment {
 
     int count;
     ArrayList<Hotel> hotel_list=new ArrayList<>();
+   public static ArrayList<String> Places=new ArrayList<>();
     RequestQueue queue;
     Dialog dialog;
     public HomeFragment() {
@@ -55,8 +57,8 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_home, container, false);
-        Button submit=(Button)view.findViewById(R.id.submit);
-        final EditText place=(EditText)view.findViewById(R.id.place);
+        Button submit=(Button)view.findViewById(R.id.submit_btn);
+        final EditText place=(EditText)view.findViewById(R.id.destination_etxt);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,6 +96,8 @@ public class HomeFragment extends Fragment {
                                         if (span.size() > 1) {
                                             String rank = span.get(0).text();
                                             String name = span.get(1).text();
+                                           // Places.add(rank);
+                                            Places.add(name);
                                             Log.e("Rank", rank);
                                             Log.e("Area", name);
 
@@ -137,6 +141,7 @@ public class HomeFragment extends Fragment {
                                        //      getImg();
                                         Intent intent=new Intent(getContext(),HotelSelection.class);
                                         Bundle bundle = new Bundle();
+                                       // bundle.putS
                                         bundle.putSerializable("Hotel_List",hotel_list);
                                         intent.putExtras(bundle);
                                         dialog.dismiss();
@@ -182,6 +187,8 @@ public class HomeFragment extends Fragment {
                             bundle.putSerializable("Hotel_List",hotel_list);
                             intent.putExtras(bundle);
                             dialog.dismiss();
+
+
                             startActivity(intent);
                         }
                     }
