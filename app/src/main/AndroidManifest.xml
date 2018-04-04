@@ -47,6 +47,11 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".LoginActivity.ForgotPassword" />
         <activity android:name=".LoginActivity.ChangePassword"></activity>
+        <activity
+            android:name="com.me.travelapp.FullBlogAdapter"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
     </application>
+
 
 </manifest>

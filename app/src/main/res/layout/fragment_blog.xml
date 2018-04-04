@@ -33,6 +33,7 @@
             android:background="@color/global_color_green_accent"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="80dp"
+            android:src="@drawable/addpost"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             />

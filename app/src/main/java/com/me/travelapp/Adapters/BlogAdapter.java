@@ -59,7 +59,7 @@ public class BlogAdapter extends PagerAdapter {
         String data = posts.get(position).getBlog();
         String[] result = data.split("\n", 2);
 
-        imageView.setImageBitmap(StringToBitMap(posts.get(position).getPhoto()));
+        imageView.setImageBitmap(StringToBitMap(posts.get(position).getPhoto().get(0)));
         titleView.setText(result[0]);
         textView.setText(result[1]);
         return view;
