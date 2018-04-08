@@ -9,4 +9,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_blog_writer">BlogWriterActivity</string>
+
+    <string-array name="planets_array">
+        <item>+91</item>
+        <item>+1</item>
+
+    </string-array>
 </resources>
+
