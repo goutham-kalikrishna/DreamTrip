@@ -1,6 +1,21 @@
 {
     "logs": [
         {
+            "outputFile": "C:\\Users\\Pranay\\Documents\\GitHub\\TravelApp\\app\\build\\intermediates\\incremental\\mergeMinSdkIcsDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Pranay\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\fa349d4398d07af928fadc8bdb21bdee\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Pranay\\Documents\\Backup\\TravelApp-20180415T141208Z-001\\TravelApp\\app\\build\\intermediates\\incremental\\mergeMinSdkIcsDebugResources\\merged.dir\\values-h720dp-v13\\values-h720dp-v13.xml",
             "map": [
                 {

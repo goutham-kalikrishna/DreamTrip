@@ -183,12 +183,15 @@ public class ProfileActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String value = dataSnapshot.getValue(String.class);
 //                Log.d(TAG, "Value is: " + value);
-                if(value.equals("Male"))
-                    gender.setSelection(1);
-                else if(value.equals("Female"))
-                    gender.setSelection(2);
-                else
-                    gender.setSelection(0);
+                if(value!=null)
+                {
+                    if(value.equals("Male"))
+                        gender.setSelection(1);
+                    else if(value.equals("Female"))
+                        gender.setSelection(2);
+                    else
+                        gender.setSelection(0);
+                }
             }
 
             @Override
