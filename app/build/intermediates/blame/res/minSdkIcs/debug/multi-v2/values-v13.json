@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\j.girish\\Documents\\GitHub\\TravelApp\\app\\build\\intermediates\\incremental\\mergeMinSdkIcsDebugResources\\merged.dir\\values-v13\\values-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\j.girish\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\04ba2d0898ea2336fe2ba701b40b5e30\\res\\values-v13\\values-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "58",
+                        "endOffsets": "109"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -44,9 +44,10 @@ public class HomeFragment extends Fragment {
 
     int count;
     ArrayList<Hotel> hotel_list=new ArrayList<>();
-   public static ArrayList<String> Places=new ArrayList<>();
+    public static ArrayList<String> Places=new ArrayList<>();
     RequestQueue queue;
     Dialog dialog;
+
     public HomeFragment() {
         // Required empty public constructor
     }

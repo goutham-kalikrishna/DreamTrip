@@ -2,6 +2,7 @@ package com.me.travelapp.LoginActivity;
 
 import android.app.ActionBar;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.Typeface;
@@ -41,6 +42,7 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.me.travelapp.POJO.UserData;
 import com.me.travelapp.R;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener{
@@ -97,7 +99,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         spinner =  findViewById(R.id.spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.planets_array, android.R.layout.simple_spinner_item);
+                R.array.phone_codes, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
@@ -287,6 +289,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                                 }
                                             });
 
+                                    Resources res = getResources();
+                                    String[] codes = res.getStringArray(R.array.phone_codes);
+
+                                    UserData.addUser(user.getUid(),username.getText().toString(),codes[spinner.getSelectedItemPosition()]+" "+phone.getText().toString(),email.getText().toString(),"Firebase");
                                     startActivity(intent);
                                     finish();
                                     Snackbar.make(homeLayout,"Verify email to activate account!!!",Snackbar.LENGTH_LONG).show();
@@ -302,7 +308,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                         username.setError("Invalid");
                                         username.requestFocus();
                                     } catch (FirebaseAuthUserCollisionException e) {
-//                                    Toast.makeText(LoginActivity.this, "Authentication failed: " + e.getMessage(), Toast.LENGTH_LONG).show();
                                         Snackbar.make(homeLayout,"Account already exists!!!",Snackbar.LENGTH_SHORT).show();
                                     } catch (Exception e) {
                                         Log.e(TAG, e.getMessage());
