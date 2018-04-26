@@ -62,6 +62,8 @@ public class Post implements Serializable {
             return null;
         }
     }
+
+
     public static Comparator<Post> Comp = new Comparator<Post>() {
 
         public int compare(Post p1, Post p2) {

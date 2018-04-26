@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "676454430694-c8tgdrnh19p2647cua24bsf2vvfu4btm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.travelapp",
+            "certificate_hash": "d6c8148212c5449f2413520c77aec5ff4ffdb820"
+          }
+        },
+        {
+          "client_id": "676454430694-rp236n0ieg7sv7ac813mshi0uv16frgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.travelapp",
+            "certificate_hash": "de9b42aab1f79b22beeda1e32bac74020432cde1"
+          }
+        },
+        {
           "client_id": "676454430694-1qpf7oogovt8vu7jhl991s52qs5jutec.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

@@ -8,11 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.me.travelapp.LoginActivity.ChangePassword;
 import com.me.travelapp.LoginActivity.LoginActivity;
+import com.me.travelapp.ProfileActivity.ProfileActivity;
 import com.me.travelapp.R;
 
 /**
@@ -27,6 +29,7 @@ public class ProfileFragment extends Fragment {
 
     TextView logoutBtn;
     TextView changePassword;
+    ImageView editProfile;
 
 
     @Override
@@ -49,6 +52,15 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getContext(), ChangePassword.class);
+                startActivity(intent);
+            }
+        });
+
+        editProfile=view.findViewById(R.id.edit_profile);
+        editProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(), ProfileActivity.class);
                 startActivity(intent);
             }
         });

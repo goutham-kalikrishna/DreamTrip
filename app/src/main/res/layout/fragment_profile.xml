@@ -3,31 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.me.travelapp.Fragments.ProfileFragment">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <ScrollView
             android:layout_width="match_parent"
-
             android:layout_height="match_parent">
+
             <RelativeLayout
-
                 android:layout_width="match_parent"
-
                 android:layout_height="match_parent">
-
-
 
                 <ImageView
 
                     android:id="@+id/header_cover_image"
-
                     android:layout_width="match_parent"
-
                     android:layout_height="200dp"
-
                     android:scaleType="centerCrop"
-
                     android:src="@drawable/over" />
 
 
@@ -74,42 +68,15 @@
                     android:paddingBottom="24dp">
 
 
-
-
-
                     <ImageView
-
-                        android:id="@+id/add_friend"
-
+                        android:id="@+id/edit_profile"
                         android:layout_width="30dp"
-
                         android:layout_height="30dp"
-
-                        android:layout_marginLeft="16dp"
-
-                        android:layout_marginTop="16dp"
-
-                        android:layout_toLeftOf="@+id/drop_down_option_menu"
-
-                        android:src="@drawable/ic_person_add_white_24dp" />
-
-
-
-                    <ImageView
-
-                        android:id="@+id/drop_down_option_menu"
-
-                        android:layout_width="30dp"
-
-                        android:layout_height="30dp"
-
                         android:layout_alignParentRight="true"
-
                         android:layout_marginLeft="16dp"
-
                         android:layout_marginTop="16dp"
-
                         android:src="@drawable/ic_more_vert_white_24dp" />
+
 
 
 
