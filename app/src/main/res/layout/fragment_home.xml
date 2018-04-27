@@ -5,13 +5,10 @@
     tools:context="com.me.travelapp.Fragments.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/travel_bg">
+            android:background="@drawable/wish">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -196,5 +193,4 @@
             </LinearLayout>
 
         </RelativeLayout>
-    </ScrollView>
 </FrameLayout>

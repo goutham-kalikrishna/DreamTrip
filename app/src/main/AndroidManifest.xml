@@ -21,7 +21,7 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
         <activity android:name=".HotelSelection" />
         <activity android:name=".ListViewDraggingAnimation" />
         <activity
@@ -47,13 +47,15 @@
             android:name=".LoginActivity.SignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
         <activity android:name=".LoginActivity.ForgotPassword" />
-        <activity android:name=".LoginActivity.ChangePassword"></activity>
+        <activity android:name=".LoginActivity.ChangePassword" />
         <activity
-            android:name="com.me.travelapp.FullBlogAdapter"
-            android:theme="@style/Theme.AppCompat.NoActionBar" >
-        </activity>
-        <activity android:name=".ProfileActivity.ProfileActivity"></activity>
+            android:name=".FullBlogAdapter"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".ProfileActivity.ProfileActivity" />
+        <activity
+            android:name=".BucketListActivity"
+            android:label="@string/title_activity_bucket_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
-
 
 </manifest>

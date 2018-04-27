@@ -30,10 +30,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/fab"
-            android:background="@color/global_color_green_accent"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="80dp"
-            android:src="@drawable/addpost"
+            android:src="@drawable/plus20"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             />

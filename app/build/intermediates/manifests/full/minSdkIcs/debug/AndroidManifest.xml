@@ -68,9 +68,12 @@
         <activity android:name="com.me.travelapp.LoginActivity.ChangePassword" />
         <activity
             android:name="com.me.travelapp.FullBlogAdapter"
-            android:theme="@style/Theme.AppCompat.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name="com.me.travelapp.ProfileActivity.ProfileActivity" />
+        <activity
+            android:name="com.me.travelapp.BucketListActivity"
+            android:label="@string/title_activity_bucket_list"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
             android:excludeFromRecents="true"

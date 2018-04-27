@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.me.travelapp.BucketListActivity;
 import com.me.travelapp.LoginActivity.ChangePassword;
 import com.me.travelapp.LoginActivity.LoginActivity;
 import com.me.travelapp.ProfileActivity.ProfileActivity;
@@ -30,6 +31,7 @@ public class ProfileFragment extends Fragment {
     TextView logoutBtn;
     TextView changePassword;
     ImageView editProfile;
+    TextView bucketlist;
 
 
     @Override
@@ -44,6 +46,16 @@ public class ProfileFragment extends Fragment {
                 FirebaseAuth.getInstance().signOut();
                 Intent i = new Intent(getContext(), LoginActivity.class);
                 startActivity(i);
+            }
+        });
+
+
+        bucketlist=view.findViewById(R.id.bucketlist);
+        bucketlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getContext(), BucketListActivity.class);
+                startActivity(intent);
             }
         });
 
