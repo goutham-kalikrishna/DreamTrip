@@ -55,7 +55,8 @@
         <activity
             android:name=".BucketListActivity"
             android:label="@string/title_activity_bucket_list"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CompareActivity"></activity>
     </application>
 
 </manifest>

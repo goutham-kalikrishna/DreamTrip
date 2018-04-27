@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
+ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\4bf656a6385a49541f83e3e4dbe077f6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\41506f4d7fe01f263ae33102dec05172\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\25813ee7d3f4de22d0dedf6a51a1f0b8\AndroidManifest.xml:17:1-22:12
@@ -51,20 +51,20 @@ MERGED from [com.google.firebase:firebase-analytics-license:11.8.0] C:\Users\HP-
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b5ea169d3726a564de3b788be332876e\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics-impl-license:11.8.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\firebase-analytics-impl-license-11.8.0.aar\aeacfbfe68b3c5c0bee3d8393759466c\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.firebase:firebase-iid-license:11.8.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\firebase-iid-license-11.8.0.aar\5b8c76a6ea77fc64c5ec4f25b4b08672\AndroidManifest.xml:2:1-6:12
-INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
-INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
+INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
 	package
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
 		INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
-		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
-		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-61:12
+		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:1-62:12
 		INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:2:11-69
@@ -99,7 +99,7 @@ MERGED from [com.google.firebase:firebase-iid:11.8.0] C:\Users\HP-USER\.gradle\c
 	android:name
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:12:22-64
 application
-ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:14:5-59:19
+ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:14:5-60:19
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\4bf656a6385a49541f83e3e4dbe077f6\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\4bf656a6385a49541f83e3e4dbe077f6\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\HP-USER\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c5026c5cf12e75d9cf39325cbe0a8c8e\AndroidManifest.xml:9:5-20
@@ -239,13 +239,17 @@ ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:54:9-69
 	android:name
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:54:19-66
 activity#com.me.travelapp.BucketListActivity
-ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:55:9-58:68
+ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:55:9-58:59
 	android:label
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:57:13-63
 	android:theme
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:58:13-56
 	android:name
 		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:56:13-47
+activity#com.me.travelapp.CompareActivity
+ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:59:9-62
+	android:name
+		ADDED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml:59:19-50
 uses-sdk
 INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from G:\GitHub\TravelApp\app\src\main\AndroidManifest.xml
