@@ -16,6 +16,21 @@
             ]
         },
         {
+            "outputFile": "G:\\GitHub\\TravelApp\\app\\build\\intermediates\\incremental\\mergeMinSdkIcsDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\HP-USER\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.0.aar\\1e2238f69ac00b1642912e4f5b7cc36a\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "C:\\Users\\Pranay\\Documents\\GitHub\\TravelApp\\app\\build\\intermediates\\incremental\\mergeMinSdkIcsDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {

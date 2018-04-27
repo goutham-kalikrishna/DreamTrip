@@ -1,7 +1,7 @@
-#Fri Apr 20 01:20:25 IST 2018
-base.0=C\:\\Users\\Pranay\\Documents\\Backup\\TravelApp-20180415T141208Z-001\\TravelApp\\app\\build\\intermediates\\transforms\\dexMerger\\minSdkIcs\\debug\\18
+#Fri Apr 27 01:24:30 IST 2018
+base.0=G\:\\GitHub\\TravelApp\\app\\build\\intermediates\\transforms\\dexMerger\\minSdkIcs\\debug\\19
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=C\:\\Users\\Pranay\\Documents\\Backup\\TravelApp-20180415T141208Z-001\\TravelApp\\app\\build\\intermediates\\transforms\\dexMerger\\minSdkIcs\\debug\\10
+base.1=G\:\\GitHub\\TravelApp\\app\\build\\intermediates\\transforms\\dexMerger\\minSdkIcs\\debug\\10
